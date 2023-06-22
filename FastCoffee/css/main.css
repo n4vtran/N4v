@@ -1,0 +1,279 @@
+li {
+    list-style: none;
+}
+
+/* Bill Layout */
+/* Header */
+.header {
+    background-color: var(--coffee-light-2);
+    border-bottom: 2px solid var(--coffee);
+    padding: 12px 0;
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar-left{
+    display: inline-flex;
+    align-items: center;
+}
+
+.header__navbar-right{
+    display: flex;
+    align-items: center;
+}
+
+.header__navbar-right span {
+    margin-right: 24px;
+}
+
+
+
+.header__navbar-menu li {
+    list-style: none;
+    text-decoration: none;
+    float: left;
+}
+
+.header__navbar-menu li a {
+    padding: 26px 12px;
+}
+
+.header__navbar-menu li a:hover {
+    background-color: var(--coffee);
+    color: var(--light);
+}
+
+.logo {
+    height: 48px;
+    width: auto;
+    margin-right: 48px;
+}
+
+.avatar {
+    height: 36px;
+    width: 36px;
+    margin-right: 8px;
+    border-radius: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ri {
+    font-size: 1.2em;
+    line-height: 1em;
+    margin-right: 6px;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.log-out {
+    font-size: 1.6em;
+    color: var(--coffee);
+}
+
+
+/* Body */
+
+.body__card-bill-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 28px;
+    margin-top: 50px;
+}
+
+/* Box Bill Add */
+.body__card-bill-box-add {
+    height: 212px;
+    width: 370px;
+    background-color: var(--coffee-light-2);
+    border-radius: 8px;
+    border: 1px solid var(--coffee);
+}   
+
+.body__card-bill-box-add-top {
+    height: 50px;
+    width: 370px;
+    background-color: var(--coffee);
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.body__card-bill-box-add-top a {
+    margin-left: 24px;
+    color: var(--light);
+}
+
+.add {
+    font-size: 3em;
+    color: var(--medium);
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Box Bill */
+.body__card-bill-box {
+    height: 212px;
+    width: 370px;
+    background-color: var(--coffee-light-2);
+    border-radius: 8px;
+    border: 1px solid var(--coffee);
+}
+
+.body__card-bill-box-top {
+    height: 50px;
+    width: 370px;
+    background-color: var(--coffee);
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.card-top-item {
+    display: inline-flex;
+}
+
+.card-top-item li {
+    list-style: none;
+    margin-left: 24px;
+}
+
+.card-top-item .center-item {
+    margin-left: 80px;
+}
+
+.delete {
+    margin-left: 85px;
+    font-size: 1.5em;
+}
+
+.body__card-bill-box-content ul li .ri {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.body__card-bill-box-content {
+    margin-left: 24px;
+    margin-top: 24px;
+}
+
+.body__card-bill-box-content ul li {
+    margin-bottom: 16px;
+}
+
+.body__card-bill-box-button{
+    display: flex;
+}
+
+.body__card-bill-box-button-left {
+    height: 46px;
+    width: 185px;
+    border-top: 1px solid var(--coffee);
+    border-right: 1px solid var(--coffee);
+    border-bottom-left-radius: 6px;
+    background: none;
+    margin-top: 8px;
+}
+
+.body__card-bill-box-button-right {
+    height: 46px;
+    width: 185px;
+    border-top: 1px solid var(--coffee);    
+    border-bottom-right-radius: 6px;
+    background: none    ;
+    margin-top: 8px;
+}
+
+.body__card-bill-box-button-left:hover {
+    background-color: var(--coffee-light-1);
+    cursor: pointer;
+}
+
+.body__card-bill-box-button-right:hover {
+    background-color: var(--coffee-light-1);
+    cursor: pointer;
+}
+
+/* Seat Layout */
+
+.body__seat-button {
+    display: flex;
+    margin-top: 40px;
+}
+
+.body__seat-button-primary {
+    height: 46px;
+    width: 150px;
+    background-color: var(--coffee);
+    border-radius: 8px;
+    margin-right: 24px;
+}
+
+.body__seat-button-secondary {
+    height: 46px;
+    width: 150px;
+    background: none;
+    border-radius: 8px;
+    border: 1px solid var(--coffee);
+}
+
+.body__seat-button-secondary:hover {
+    background-color: var(--coffee);
+    color: var(--light);
+}
+
+.body__seat-box {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 28px;
+    margin-top: 40px;
+}
+
+.body__seat-box-empty {
+    text-align: center;
+    height: 170px;
+    width: 170px;
+    border-radius: 8px;
+    background-color: var(--coffee-light-2);
+    border: 1px solid var(--coffee);
+}
+
+.body__seat-box-1 img {
+    height: 28px;
+    width: 28px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.body__seat-box-1 p {
+    margin-bottom: 16px;
+}
+
+.body__seat-box-full {
+    text-align: center;
+    height: 170px;
+    width: 170px;
+    border-radius: 8px;
+    background-color: var(--coffee-light-1);
+    border: 1px solid var(--coffee);
+}
+
+/* Menu Layout*/
+
+/* Category and Product */
+
+.body__menu {
+    height: 748px;
+    width: 659px;
+    background-color: var(--coffee-light-2);
+}
+
+.body__menu-category {
+    overflow-y: scroll;
+}
